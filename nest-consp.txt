@@ -93,7 +93,7 @@ https://www.youtube.com/watch?v=dDeWWQWMM-Y&t=715s
 	- In app.module added our model in models: []
 	- In user.module added imports: []
 
-07 User Service ---------------------------------------------------------------
+07 User Service - 23:00 -------------------------------------------------------
 
 	- Connect model in servise file
 	- Connect dto file, dto - simply object with fields only, for exchange data beetween files.
@@ -101,21 +101,22 @@ https://www.youtube.com/watch?v=dDeWWQWMM-Y&t=715s
 	- Then we conected service in user.controller
 	- Then tested in postman
 
-08 Documentation Rest Api -----------------------------------------------------
+08 Swager Documentation Rest Api - 26:30 --------------------------------------
 
 	- npm i @nestjs/swagger swagger-ui-express
-	- Configure swagger in the file main.ts
+	- Configure swagger in the file main.ts - const config = new DocumentBuilder()
 	- Add decorators @ApiOperation({}), @ApiResponse({}) in user.controller
 	- Add decorators @ApiProperty({}) in user.model for every field
 	- Add decorators @ApiProperty({}) in create-user.dto.ts for post body description
 
 	- To group methods in swagger, add a decorator @ApiTags('Users') to the file user.controller
 
-09 User roles module ----------------------------------------------------------
+09 User roles module - 32:10 --------------------------------------------------
 
 	- nest generate module roles
-	- nest generate service roles
 	- nest generate controller roles
+	- nest generate service roles
+
 	- Copy in roles older model file from users, and edit model for roles
 	- Connect Role model in role.module and in app.module
 
