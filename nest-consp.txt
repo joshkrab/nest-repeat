@@ -120,7 +120,7 @@ https://www.youtube.com/watch?v=dDeWWQWMM-Y&t=715s
 	- Copy in roles older model file from users, and edit model for roles
 	- Connect Role model in role.module and in app.module
 
-10 Connection between tables - Many to Many -----------------------------------
+10 Connection between tables - Many to Many - 34:30 ---------------------------
 
 	- In this case, creating temporary table, where we can see - which roles for user
 	- In role model file, we write decorator: @BelongsToMany()
@@ -134,7 +134,7 @@ https://www.youtube.com/watch?v=dDeWWQWMM-Y&t=715s
 	- We marked outside fields with decorator @ForeignKey(()=>Role)
 	- imported this models in every module files
 
-11 Role service ---------------------------------------------------------------
+11 Role service - 38:00 -------------------------------------------------------
 
 	- Write two methods like in users.service
 	- Write roles.controller
@@ -143,7 +143,7 @@ https://www.youtube.com/watch?v=dDeWWQWMM-Y&t=715s
 	- Injectes role service in constructor
 	- Add RoleModule in users.module in imports and also in exports in roles.module
 
-12 Authorization --------------------------------------------------------------
+12 Authorization - 44:50 ------------------------------------------------------
 
 	- nest generate module auth
 	- nest generate controller auth
@@ -159,8 +159,6 @@ https://www.youtube.com/watch?v=dDeWWQWMM-Y&t=715s
 	- Для регістрації рекомендується використовувати passport js, але ми зараз розробляємо самі для практики
 
 	- Wrote register service and generate token, tested in postman
-
-	- Лекція ----------------------------------------------------------------------------------------------------
 
 	- passport - бібліотека і мідлвара. 
 
