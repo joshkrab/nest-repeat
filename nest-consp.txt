@@ -64,15 +64,15 @@ https://www.youtube.com/watch?v=dDeWWQWMM-Y&t=715s
 
 	- synchronize: false, for production - migrations
 	
-04 Users module - 12:10 --------------------------------------------------------------
+04 Users module - 12:10 -------------------------------------------------------
 
-	- Created users folder: nest generate module users
+	- nest generate module users
 	- Also it was imported automatically in main module file
 	- Also made: nest generate controller users, nest generate service users
 	- These two files were imported in user.module file automatically
 	- Deleted two red test files in users directory
 
-05 npm i @nestjs/config ENV ---------------------------------------------------
+05 npm i @nestjs/config ENV - 13:40 -------------------------------------------
 
 	- Creating file for database connection data
 	- Install npm i @nestjs/config
@@ -87,7 +87,7 @@ https://www.youtube.com/watch?v=dDeWWQWMM-Y&t=715s
 	- We added global variable NODE_ENV
 	- In main module file wrote: envFilePath: `.${process.env.NODE_ENV}.env`,
 
-06 User Model -----------------------------------------------------------------
+06 User Model - 18:30 ---------------------------------------------------------
 
 	- In users folder we created file users.model.ts - created model there
 	- In app.module added our model in models: []
