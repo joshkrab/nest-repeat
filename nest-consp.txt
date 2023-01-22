@@ -162,7 +162,9 @@ https://www.youtube.com/watch?v=dDeWWQWMM-Y&t=715s
 
 	- passport - бібліотека і мідлвара. 
 
-13 Guards, CanActivate --------------------------------------------------------
+	55 minute
+
+13 Guards, CanActivate - 55:30 ------------------------------------------------
 
 	- If user is not authorized, he can't get the resource
 	- Create jwt-auth.guard.ts
@@ -172,7 +174,7 @@ https://www.youtube.com/watch?v=dDeWWQWMM-Y&t=715s
 	- Wrote decorator @UseGuards(JwtAuthGuard) with jor guard function
 	- Tested in postman
 
-14 Checking user roles --------------------------------------------------------
+14 Checking user roles - 01:01 ------------------------------------------------
 
 	- In auth folder crate roles-auth.decorator.ts and role.guard.ts
 	- Copy end edit logic from jwt-auth.guard.ts
@@ -181,12 +183,12 @@ https://www.youtube.com/watch?v=dDeWWQWMM-Y&t=715s
 
 	- Use it in users.controller
 
-15 Add endpoint for adding roles ----------------------------------------------
+15 Add endpoint for adding roles - 01:05 --------------------------------------
 
-	- Create addpoint in users.controller
-	- Create addRole function in user.service
+	- Create endpoint in users.controller
+	- Create addRole/ban functions in user.service
 
-16 Pipes, Class-validator -----------------------------------------------------
+16 Pipes, Class-validator - 01:13 ---------------------------------------------
 
 	- Pipes - functions for data conversion (string to number), and for validation input data
 
@@ -195,7 +197,7 @@ https://www.youtube.com/watch?v=dDeWWQWMM-Y&t=715s
 	- Create validation for create-user.dto and add-role.dto
 	- Add decorators/validators for fields: @IsString(), @Length(), @IsEmail()
 
-	- create validation.pipe file
+	- create validation.pipe.ts file
 	- create exceptions folder for custom errors
 	- Add pipe function to addUser in controller - @UsePipes()
 	- Then removed it globally in main.ts
@@ -203,13 +205,13 @@ https://www.youtube.com/watch?v=dDeWWQWMM-Y&t=715s
 	- Замість свого validation.pipe файлу, я просто використав вбудований @UsePipes(ValidationPipe),
 	та валідація працює, тільки описав в дто
 
-17 Work with files, static, Posts module, One to Many -------------------------
+17 Work with files, static, Posts module, One to Many - 01:21 -----------------
 
 	- nest generate module posts
 	- nest generate controller posts
 	- nest generate service posts
 
-	- Create posts for uders
+	- Create posts for users
 	- Create post.model, copy and edit from users
 	- Create connect in models post and user
 	- All models imported in app.module in DB settings

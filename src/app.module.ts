@@ -7,9 +7,11 @@ import { RolesModule } from './roles/roles.module';
 import { Role } from './roles/roles.model';
 import { UserRoles } from './roles/user-roles.model';
 import { AuthModule } from './auth/auth.module';
+import { PostsModule } from './posts/posts.module';
+import { PostController } from './post/post.controller';
 
 @Module({
-  controllers: [],
+  controllers: [PostController],
   providers: [],
   imports: [
     ConfigModule.forRoot({
@@ -28,6 +30,7 @@ import { AuthModule } from './auth/auth.module';
     UsersModule,
     RolesModule,
     AuthModule,
+    PostsModule,
   ],
 })
 export class AppModule {}
