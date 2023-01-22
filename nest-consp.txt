@@ -224,7 +224,7 @@ https://www.youtube.com/watch?v=dDeWWQWMM-Y&t=715s
 	- without controller
 	- nest generate service files
 
-	- Imported file module in post module
+	- Imported files module in post module
 	- Now we can inject FileService in PostService
 
 	- npm i uuid - for file names
@@ -233,9 +233,12 @@ https://www.youtube.com/watch?v=dDeWWQWMM-Y&t=715s
 
 	- Now we can see our file in browser: http://localhost:5000/4a6c5fdb-5d38-49c5-b1a4-c0be856241b9.jpg
 
-18 Docker ---------------------------------------------------------------------
+18 Docker -  ------------------------------------------------------------------
 
-	- 1:34:00
+	- Write Dockerfile
+	- Write docker-compose.yml
+	- docker-compose build
+	- docker-compose up
 
 19 Миграції: TypeORM ----------------------------------------------------------
 
