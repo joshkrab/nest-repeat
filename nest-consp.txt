@@ -251,6 +251,7 @@ https://www.youtube.com/watch?v=dDeWWQWMM-Y&t=715s
     "migration:revert": "npm run typeorm -- migration:revert"
 		
 	- npm run migration:create --name=Test1 - робить
+	- npx sequelize-cli migration:create --name update-channel-email-oauth2
 
 	- Скинув версію: "typeorm": "0.2.44" -------------------------------------------------------------------------------
 	- та зробив по відео:
